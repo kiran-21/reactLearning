@@ -6,12 +6,24 @@ import Header from './Header';
 import reportWebVitals from './reportWebVitals';
 import Footer from './Footer';
 import Tabbar from './Tabbar';
+import Navbar from './navbar';
+
+
+function Sample(){
+  return(
+    <div>
+      <h3>This is function inside index.js file</h3>
+    </div>
+  )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <React.Fragment>
       <Header />
+      <Sample />
+      <Navbar />
       <App />
       <Tabbar />
       <Footer />
